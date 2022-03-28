@@ -1,0 +1,166 @@
+/*selectores de etiqueta */
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+*{
+font-family: 'Hubballi', cursive;
+line-height: 2rem;
+}
+								    /* etiquetas */
+html{
+	padding: 0;
+	margin: 0;								}
+p{
+	color:rgb(0, 0, 0) ;
+	font-size: 2rem;
+}
+
+
+
+
+body nav ul li{
+	font-size: 1.6rem;
+	margin-left: 2rem ;
+	
+}
+
+							/* propiedasdes de grid*/
+.structure{
+	display: -ms-inline-grid;
+	grid-template-columns: 3fr;
+	grid-template-rows: 15vh 10vh 60vh 15vh;
+	grid-template-areas: "logo nav nav" "div div div" "body body body " "footer footer footer";
+	justify-items: center;
+	align-items: center;
+}
+
+#logo{
+	grid-area: logo;
+	
+}
+
+#nav{
+	grid-area: nav;
+    display: inline-flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#div{
+	grid-area: div;
+}
+
+#body{
+	grid-area: body;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+							/*selectores de clases*/
+
+.google{
+	padding-left: 30rem;
+	
+}
+
+.button{
+	text-decoration: none;
+	color:rgb(114, 30, 54) ;
+}
+.main{
+	background-image: url(https://th.bing.com/th/id/R.2810594f75eb9ec93c1fe15519d40b5b?rik=TN4pn0FFq8tJLg&pid=ImgRaw&r=0);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	}
+
+
+.textCenter{
+	text-align: center;
+ }
+.textRight{
+	text-align: right;
+}
+
+.textMain {
+	color: mediumvioletred;
+	font-size:  4rem;
+	text-align: center;
+}
+.textSub{
+	color: mediumvioletred;
+	font-size:  3rem;
+	text-align: center;
+}
+.bgDark{
+	background-color:rgba(23, 44, 204, 0.5);
+}
+
+.boxSize{
+	box-sizing: border-box;
+}
+
+.borderDobleLine{
+	border: double 3px black;
+}
+
+.navCenter{
+	padding: auto;
+	display: inline-block;
+}
+
+.inlineDisplay{
+	display: inline-block  ;	
+}
+
+.footer{
+	display: inline-flex;
+}
+
+.keypad{
+	display: inline-flex;
+	position: fixed;
+	flex-wrap: wrap;
+    flex-direction: column;
+}
+.animate{
+	animation-name: animate;
+	animation-iteration-count: 1;
+	animation-timing-function: inherit;
+	animation-duration: 2s;
+}
+										/* comienza media*/
+										
+@media only screen and (min-width: 768px) {
+	.structure{
+	display: -ms-inline-grid;
+	grid-template-columns: 3fr;
+	grid-template-rows: 15vh 10vh 60vh 15vh;
+	grid-template-areas: "logo nav nav" "div div div" "body body body " "footer footer footer";
+	justify-items: center;
+	align-items: center;
+}
+	.keypad{
+		display: inline-flex;
+		flex-direction: row;
+		padding-top: 10vh;
+	}
+	#nav{
+	grid-area: nav;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+	  }
+
+
+@keyframes animate{
+	0%{width:0vw}
+	25%{width:25vw}
+	50%{width:50vw}
+	75%{width:75vw}
+	100%{width:100vw ;}
+}
