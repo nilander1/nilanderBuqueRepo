@@ -25,15 +25,17 @@ body nav ul li{
 							/* propiedasdes de grid*/
 .structure{
 	display: -ms-inline-grid;
-	grid-template-columns: 3fr;
+	grid-template-columns: 2fr;
 	grid-template-rows: 15vh 10vh 60vh 15vh;
-	grid-template-areas: "logo nav nav" "div div div" "body body body " "footer footer footer";
+	grid-template-areas: "logo nav" "div div" "body body " "footer footer";
 	justify-items: center;
 	align-items: center;
+
 }
 
 #logo{
 	grid-area: logo;
+	display: inline;
 	
 }
 
@@ -42,11 +44,12 @@ body nav ul li{
     display: inline-flex;
     align-content: flex-start;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
 }
 #div{
 	grid-area: div;
+	display: inline-flex;
 }
 
 #body{
@@ -110,52 +113,47 @@ body nav ul li{
 	display: inline-block;
 }
 
-.inlineDisplay{
-	display: inline-block  ;	
+	
 }
 
 .footer{
 	display: inline-flex;
 }
 
-.keypad{
-	display: inline-flex;
-	position: fixed;
-	flex-wrap: wrap;
-    flex-direction: column;
-}
+
 .animate{
 	animation-name: animate;
 	animation-iteration-count: 1;
 	animation-timing-function: inherit;
 	animation-duration: 2s;
+	width: 100vw
 }
-										/* comienza media*/
-										
-@media only screen and (min-width: 768px) {
-	.structure{
-	display: -ms-inline-grid;
-	grid-template-columns: 3fr;
-	grid-template-rows: 15vh 10vh 60vh 15vh;
-	grid-template-areas: "logo nav nav" "div div div" "body body body " "footer footer footer";
-	justify-items: center;
-	align-items: center;
-}
+
 	.keypad{
 		display: inline-flex;
 		flex-direction: row;
-		padding-top: 10vh;
+		flex-wrap: nowrap
 	}
-	#nav{
-	grid-area: nav;
-    display: inline-flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-	  }
+				/* comienza media*/
+										
+@media only screen and (min-width: 768px) {
+	.structure{
+		display: -ms-inline-grid;
+		grid-template-columns: 3fr;
+		grid-template-rows: 15vh 10vh 60vh 15vh;
+		grid-template-areas: "logo nav nav" "div div div" "body body body " "footer footer footer";
+		justify-items: center;
+		align-items: center;
+}
 
+	#nav{
+		grid-area: nav;
+    	display: inline-flex;
+    	align-content: flex-start;
+    	align-items: flex-start;
+    	flex-wrap: wrap;
+    	flex-direction: row;
+}
 
 @keyframes animate{
 	0%{width:0vw}
