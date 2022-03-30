@@ -126,7 +126,7 @@ body nav ul li{
 	animation-iteration-count: 1;
 	animation-timing-function: inherit;
 	animation-duration: 2s;
-	width: 100vw
+	width: 80vw
 }
 
 	.keypad{
@@ -160,5 +160,5 @@ body nav ul li{
 	25%{width:25vw}
 	50%{width:50vw}
 	75%{width:75vw}
-	100%{width:100vw ;}
+	100%{width:80vw ;}
 }
