@@ -14,22 +14,25 @@
 
   						<!-- comienza nav -->
 
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
- 
+ <a href="index.html" id="logo">
+				<img src="img/logo.jpg" alt="logo buques" width="200" > 
+			</a> 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <li class="nav-item buttonNav">
           <a class="nav-link active" aria-current="page" href="primera-pag.html">Buques modernos</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item buttonNav">
           <a class="nav-link active" href="contenido.html">Caracteristicas de los buques</a>
         </li>
-       <li class="nav-item">
+       <li class="nav-item buttonNav">
           <a class="nav-link active" href="sociedad-clasificadoras.html">Sociedades Clasificadoras</a>
-        <li class="nav-item">
+        <li class="nav-item buttonNav">
           <a class="nav-link active" href="principios-basicos-de-flotabilidad.html">contactanos</a>
         </li>
       </ul>
@@ -43,10 +46,30 @@
 		
 
 											<!-- informacion principal -->
+											<!--carrussel-->
 <body>
-<header class="animate" id="div" >
-				<img src="img/buque-horizontal.jpg" alt="buque tanquero" width="100%" height="200" > 
-			</header>	
+	<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active boxSize">
+      <img src="img/buque-horizontal.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item boxSize">
+      <img src="img/R.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item boxSize">
+      <img src="img/R2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+									<!--carrussel termina-->
 <main class="boxSize borderDobleLine main" id="body">
 	<article>
 		<div>
@@ -56,22 +79,20 @@
 			<h2 class="textSub">Definicion de buque</h2>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur pariatur, voluptate delectus? Similique dolor quidem, sint ad exercitationem excepturi cupiditate eaque voluptatem totam? Quod voluptatum ipsa a, doloribus itaque reprehenderit.</p>
 
-			<h3 class="textSub">Como afecta el transporte maritimo nuestro dia a dia</h3>
+			<h3 class="textSub">Como afecta el transporte maritimo nuestro dia</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, corporis corrupti alias totam quae dolorem at praesentium aspernatur placeat maxime amet error, qui animi. Velit at earum fuga quasi veritatis.</p>
 		</div>
 	</article>			
 </main>	
                                        <!-- footer -->
-<footer class="borderDobleLine textSub" id="footer"> 
-	<h3>fuentes</h3>
+<footer id="footer"> 
+	<h3 class="textfoot">fuentes</h3>
 		<div class="footer">
-			<p><a href="https://www.lr.org/en/" target="_blank" 	>
-					<img src="img/lloyd-logo.jfif" alt="lloyd logo" width="150" height="100"></a></p>
-			<p><a href="https://ww2.eagle.org/en.html" target="_blank" 	> 
-					<img src="img/abs-logo.jfif" alt="abs logo" width="150" height="100"></a></p>
+					<img src="img/lloyd-logo.jfif" class="rounded float-start" alt="lloyd logo">
+					<img src="img/abs-logo.jfif" class="rounded float-end" alt="abs logo">
 		</div>
 </footer>
-		
+
 		</div>
 </body>
 </html>
