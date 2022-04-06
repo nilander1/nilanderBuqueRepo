@@ -102,16 +102,6 @@ color:rgba(53, 132, 71, 0.82)
 	text-align: right;
 }
 
-.textMain {
-	color: mediumvioletred;
-	font-size:  4rem;
-	text-align: center;
-}
-.textSub{
-	color: mediumvioletred;
-	font-size:  3rem;
-	text-align: center;
-}
 .textButton{
 	color: black;
 	font-size: 1rem;
@@ -132,19 +122,9 @@ color:rgba(53, 132, 71, 0.82)
   width: 100%;
 }
 
-.carousel-inner img {
-  height: 300px;
-}
-
-
 .navCenter{
 	padding: auto;
 	display: inline-block;
-}
-.boxSize{
-	padding: 2rem 4rem;
-}
-	
 }
 
 .footer{
@@ -152,14 +132,6 @@ color:rgba(53, 132, 71, 0.82)
 	flex-direction: row;
 }
 
-
-.animate{
-	animation-name: animate;
-	animation-iteration-count: 1;
-	animation-timing-function: inherit;
-	animation-duration: 2s;
-	width: 100vw
-}
 
 	.keypad{
 		display: inline-flex;

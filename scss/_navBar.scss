@@ -1,0 +1,15 @@
+//nesting
+.animate{
+	animation-name: animate;
+	animation-iteration-count: 1;
+	animation-timing-function: inherit;
+	animation-duration: 2s;
+	width:$w-100;
+}
+
+.carousel-inner{
+	img{
+		height:$h-300p;
+	}
+}
+
