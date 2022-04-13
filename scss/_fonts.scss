@@ -3,14 +3,14 @@
 
 //nesting
 .textMain{
-	color: $colorMain;
-	font-size: $tittleSize;
-	text-align: center;
+@include texto(blue, 3rem,) 
 }
 
-.textSub{
-	color: $colorSub;
-	font-size: $subFontSize;
-	text-align: center;
+.textSub {
+	@include texto(blue, 3rem,)
+	
+}
 
+.textfoot{
+	@include texto(blue, 3rem,)
 }

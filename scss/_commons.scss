@@ -1,6 +1,15 @@
-//variables globales
+//rgba(31, 31, 237, 1)
+//mixins
 
-//alto en pix
+@mixin texto($color,$font-size){
+	color:$color;
+	font-size: $font-size;
+	text-align: center;
+
+}
+
+
+// alto en pix
 $h-300p:300px;
 
 //ancho de vision
@@ -19,4 +28,26 @@ $tittleSize: 4rem;
 		//secundario
 $colorSub:mediumvioletred;
 $subFontSize: 3rem;
+$colorW:white;
 
+//maps
+
+$colors:(
+	'uno':blue,
+	'dos':mediumvioletred,
+	'tres':yellow,
+	'cuatro':red,
+	);
+
+//variables globales
+ .buttonNav{
+border-style: solid;
+border-width: 1px;
+&:hover{
+background: rgba(125, 213, 248, 0.8);}
+ }
+
+ .buttonExtend{
+ 	@extend .buttonNav;
+ 	background:map-get($map:$colors, $key:'tres') ;	
+ }

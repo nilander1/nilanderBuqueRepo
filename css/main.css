@@ -1,10 +1,24 @@
+.buttonNav, .buttonExtend {
+  border-style: solid;
+  border-width: 1px; }
+  .buttonNav:hover, .buttonExtend:hover {
+    background: rgba(125, 213, 248, 0.8); }
+
+.buttonExtend {
+  background: yellow; }
+
 .textMain {
-  color: mediumvioletred;
-  font-size: 4rem;
+  color: blue;
+  font-size: 3rem;
   text-align: center; }
 
 .textSub {
-  color: mediumvioletred;
+  color: blue;
+  font-size: 3rem;
+  text-align: center; }
+
+.textfoot {
+  color: blue;
   font-size: 3rem;
   text-align: center; }
 
@@ -20,3 +34,6 @@
 
 .boxsize {
   padding: 2rem 4rem; }
+
+.colorW {
+  color: white; }

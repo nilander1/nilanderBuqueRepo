@@ -84,10 +84,6 @@ body nav ul li{
 	color:rgb(114, 30, 54) ;
 }
 
-.buttonNav:hover{
-background: rgba(125, 213, 248, 0.8);
-color:rgba(53, 132, 71, 0.82)
-}
 .main{
 	background-color: white;
 	margin: 5rem 5rem;
@@ -108,11 +104,7 @@ color:rgba(53, 132, 71, 0.82)
 
 }
 
-.textfoot{
-	color: mediumvioletred;
-	font-size:  3rem;
-	text-align: center;
-}
+
 .bgDark{
 	background-color:rgba(23, 44, 204, 0.5);
 }
