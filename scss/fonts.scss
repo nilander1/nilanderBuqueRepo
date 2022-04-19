@@ -1,0 +1,24 @@
+//Caracteristicas de fuente
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+*{
+font-family: 'Hubballi', cursive;
+line-height: 2rem;
+}
+
+//nesting
+.textMain{
+@include texto(blue, 3rem,) 
+}
+
+.textSub {
+	@include texto(blue, 3rem,)
+	
+}
+
+.textfoot{
+	@include texto(blue, 3rem,)
+}
+
+.paragraph{
+	@include texto(black, 1.6rem)
+}

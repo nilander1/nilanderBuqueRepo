@@ -1,0 +1,141 @@
+
+/* etiquetas*/
+
+
+body nav ul li{
+	font-size: 1.6rem;
+	margin-left: 2rem ;
+	
+}
+
+/*clases grid*/
+ .structure{
+	display: -ms-inline-grid;
+	grid-template-columns: 2fr;
+	grid-template-rows: 15vh 10vh 60vh 15vh;
+	grid-template-areas: "logo nav" "div div" "body body " "footer footer";
+	justify-items: center;
+	align-items: center;
+}
+
+#logo{
+	grid-area: logo;
+	display: inline;
+}
+
+#nav{
+	grid-area: nav;
+    display: inline-flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+#div{
+	grid-area: div;
+	display: inline-flex;
+}
+
+#body{
+	grid-area: body;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+//mixins
+
+@mixin texto($color,$font-size){
+	color:$color;
+	font-size: $font-size;
+	text-align: center;
+
+}
+
+
+// alto en pix
+$h-300p:300px;
+
+//ancho de vision
+$w-25:25vw;
+$w-50:50vw;
+$w-75:75vw;
+$w-100:100vw;
+
+//tamaño de cajas
+$boxsize: 2rem 4rem;
+
+//caracteristicas de la fuente
+		//principal
+$colorMain:mediumvioletred;
+$tittleSize: 4rem;
+		//secundario
+$colorSub:mediumvioletred;
+$subFontSize: 3rem;
+$colorW:white;
+//maps
+
+$colors:(
+	'uno':blue,
+	'dos':mediumvioletred,
+	'tres':rgba(128, 170, 177, 0.4),
+	'cuatro':red,
+	'cinco':#f7f8fa,
+	);
+
+//variables globales
+.google{
+	padding-left: 20rem;
+}
+
+.main{
+	background:map-get($map:$colors, $key:'cinco') ;	
+ 	margin: 3rem 3rem;
+	z-index: 1;
+	}
+.container-fluid {
+  height: 90%;
+  width: 100%;
+}
+
+.navCenter{
+	padding: auto;
+	display: inline-block;
+}
+
+.footer{
+	display: inline;
+	flex-direction: row;
+}
+	.keypad{
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: nowrap
+	}
+ .buttonNav{
+border-style: solid;
+border-width: 1px;
+&:hover{
+background: rgba(125, 213, 248, 0.8);}
+ }
+
+ .buttonExtend{
+ 	@extend .buttonNav;
+ 	background:map-get($map:$colors, $key:'tres') ;	
+ }
+/*media*/
+
+ @media only screen and (max-width: 768px){
+.main{ margin: 1rem 
+ }}
+
+ @media only screen and (min-width: 768px) {
+	.structure{
+		display: -ms-inline-grid;
+		grid-template-columns: 3fr;
+		grid-template-rows: 15vh 10vh 60vh 15vh;
+		grid-template-areas: "logo nav nav" "div div div" "body body body " "footer footer footer";
+		justify-items: center;
+		align-items: center;
+} }

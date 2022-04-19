@@ -1,11 +1,110 @@
+/* etiquetas*/
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&display=swap");
+body nav ul li {
+  font-size: 1.6rem;
+  margin-left: 2rem; }
+
+/*clases grid*/
+.structure {
+  display: -ms-inline-grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: 15vh 10vh 60vh 15vh;
+  grid-template-areas: "logo nav" "div div" "body body " "footer footer";
+  justify-items: center;
+  align-items: center; }
+
+#logo {
+  grid-area: logo;
+  display: inline; }
+
+#nav {
+  grid-area: nav;
+  display: inline-flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column; }
+
+#div {
+  grid-area: div;
+  display: inline-flex; }
+
+#body {
+  grid-area: body; }
+
+#footer {
+  grid-area: footer; }
+
+.google {
+  padding-left: 20rem; }
+
+.main {
+  background: #f7f8fa;
+  margin: 3rem 3rem;
+  z-index: 1; }
+
+.container-fluid {
+  height: 90%;
+  width: 100%; }
+
+.navCenter {
+  padding: auto;
+  display: inline-block; }
+
+.footer {
+  display: inline;
+  flex-direction: row; }
+
+.keypad {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+.buttonNav, .buttonExtend {
+  border-style: solid;
+  border-width: 1px; }
+  .buttonNav:hover, .buttonExtend:hover {
+    background: rgba(125, 213, 248, 0.8); }
+
+.buttonExtend {
+  background: rgba(128, 170, 177, 0.4); }
+
+/*media*/
+@media only screen and (max-width: 768px) {
+  .main {
+    margin: 1rem; } }
+
+@media only screen and (min-width: 768px) {
+  .structure {
+    display: -ms-inline-grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 15vh 10vh 60vh 15vh;
+    grid-template-areas: "logo nav nav" "div div div" "body body body " "footer footer footer";
+    justify-items: center;
+    align-items: center; } }
+
+* {
+  font-family: 'Hubballi', cursive;
+  line-height: 2rem; }
+
 .textMain {
-  color: mediumvioletred;
-  font-size: 4rem;
+  color: blue;
+  font-size: 3rem;
   text-align: center; }
 
 .textSub {
-  color: mediumvioletred;
+  color: blue;
   font-size: 3rem;
+  text-align: center; }
+
+.textfoot {
+  color: blue;
+  font-size: 3rem;
+  text-align: center; }
+
+.paragraph {
+  color: black;
+  font-size: 1.6rem;
   text-align: center; }
 
 .animate {
@@ -20,3 +119,6 @@
 
 .boxsize {
   padding: 2rem 4rem; }
+
+.colorW {
+  color: white; }
