@@ -1,3 +1,4 @@
+<<<<<<< HEAD:scss/content.scss
 // body
 
 .boxsize{
@@ -5,4 +6,13 @@
 }
 .colorW{
  	color:$colorW; 
+=======
+// body
+
+.boxsize{
+	padding: $boxsize;
+}
+.colorW{
+ 	color:$colorW; 
+>>>>>>> a06aa79f5713b133f1f4e928ce7d755ec04bcc2e:scss/_content.scss
  }

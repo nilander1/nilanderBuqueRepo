@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1-en la pag de common de SASS se agregaron: un map, un extend y un mixin
 con el objetivo de completar los desafios. los colores NO son definitivos
 se usaron a modo de prueba
@@ -6,4 +7,14 @@ se usaron a modo de prueba
 descripciones a las imagenes, tambien se optimizo el tamaño de las imagenes
 
 no pude realizar aun las correciones del dia de ayer y trabaje principalmente
+=======
+1-en la pag de common de SASS se agregaron: un map, un extend y un mixin
+con el objetivo de completar los desafios. los colores NO son definitivos
+se usaron a modo de prueba
+
+2-Se agregaron los meta keywords y description en todos los html ademas de
+descripciones a las imagenes, tambien se optimizo el tamaño de las imagenes
+
+no pude realizar aun las correciones del dia de ayer y trabaje principalmente
+>>>>>>> a06aa79f5713b133f1f4e928ce7d755ec04bcc2e
 en el index y la pag llamada contenido por exceso de laburo que compensare hasta la proxima entrega

@@ -1,0 +1,53 @@
+//rgba(31, 31, 237, 1)
+//mixins
+
+@mixin texto($color,$font-size){
+	color:$color;
+	font-size: $font-size;
+	text-align: center;
+
+}
+
+
+// alto en pix
+$h-300p:300px;
+
+//ancho de vision
+$w-25:25vw;
+$w-50:50vw;
+$w-75:75vw;
+$w-100:100vw;
+
+//tamaño de cajas
+$boxsize: 2rem 4rem;
+
+//caracteristicas de la fuente
+		//principal
+$colorMain:mediumvioletred;
+$tittleSize: 4rem;
+		//secundario
+$colorSub:mediumvioletred;
+$subFontSize: 3rem;
+$colorW:white;
+
+//maps
+
+$colors:(
+	'uno':blue,
+	'dos':mediumvioletred,
+	'tres':yellow,
+	'cuatro':red,
+	);
+
+//variables globales
+ .buttonNav{
+border-style: solid;
+border-width: 1px;
+&:hover{
+background: rgba(125, 213, 248, 0.8);}
+ }
+
+ .buttonExtend{
+ 	@extend .buttonNav;
+ 	background:map-get($map:$colors, $key:'tres') ;	
+ }
