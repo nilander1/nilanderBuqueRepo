@@ -14,3 +14,17 @@
 	}
 }
 
+ .buttonNav{
+border-style: solid;
+border-width: 1px;
+border-radius:50px;
+&:hover{
+	
+box-shadow: 10px 10px ;
+background:map-get($map:$colors, $key:'seis');}
+ }
+
+  .buttonExtend{
+ 	@extend .buttonNav;
+ 	background:map-get($map:$colors, $key:'tres') ;
+ }

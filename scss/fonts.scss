@@ -2,23 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
 *{
 font-family: 'Hubballi', cursive;
-line-height: 2rem;
+
 }
 
 //nesting
 .textMain{
-@include texto(blue, 3rem,) 
+line-height: 2rem;	
+@include texto(blue, 3rem, center) 
 }
 
 .textSub {
-	@include texto(blue, 3rem,)
+	line-height: 3rem;
+	@include texto(blue, 3rem, center)
 	
 }
 
 .textfoot{
-	@include texto(blue, 3rem,)
+	line-height: 1.3rem;
+	@include texto(blue, 3rem, justify)
 }
 
 .paragraph{
-	@include texto(black, 1.6rem)
+	line-height: 2rem;
+	@include texto(black, 1.6rem, justify)
 }

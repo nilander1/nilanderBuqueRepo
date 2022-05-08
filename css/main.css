@@ -40,7 +40,7 @@ body nav ul li {
 
 .main {
   background: #f7f8fa;
-  margin: 3rem 3rem;
+  margin: 2rem 2rem;
   z-index: 1; }
 
 .container-fluid {
@@ -51,28 +51,30 @@ body nav ul li {
   padding: auto;
   display: inline-block; }
 
-.footer {
-  display: inline-block;
-  flex-direction: row; }
+.opacity {
+  opacity: 0.8;
+  border-radius: 150px;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem; }
 
 .keypad {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: nowrap; }
 
-.buttonNav, .buttonExtend {
-  border-style: solid;
-  border-width: 1px; }
-  .buttonNav:hover, .buttonExtend:hover {
-    background: rgba(125, 213, 248, 0.8); }
+.backgroundNav {
+  background-image: linear-gradient(to top, #ffffff, #f66c01); }
 
-.buttonExtend {
-  background: rgba(128, 170, 177, 0.4); }
+.backgroundFooter {
+  background-image: linear-gradient(to top, #f66c01, #ffffff); }
+
+.e404 {
+  text-align: center; }
 
 /*media*/
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .main {
-    margin: 1rem; } }
+    margin: 4rem; } }
 
 @media only screen and (min-width: 768px) {
   .structure {
@@ -84,28 +86,31 @@ body nav ul li {
     align-items: center; } }
 
 * {
-  font-family: 'Hubballi', cursive;
-  line-height: 2rem; }
+  font-family: 'Hubballi', cursive; }
 
 .textMain {
+  line-height: 2rem;
   color: blue;
   font-size: 3rem;
   text-align: center; }
 
 .textSub {
+  line-height: 3rem;
   color: blue;
   font-size: 3rem;
   text-align: center; }
 
 .textfoot {
+  line-height: 1.3rem;
   color: blue;
   font-size: 3rem;
-  text-align: center; }
+  text-align: justify; }
 
 .paragraph {
+  line-height: 2rem;
   color: black;
   font-size: 1.6rem;
-  text-align: center; }
+  text-align: justify; }
 
 .animate {
   animation-name: animate;
@@ -117,6 +122,17 @@ body nav ul li {
 .carousel-inner img {
   height: 300px; }
 
+.buttonNav, .buttonExtend {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px; }
+  .buttonNav:hover, .buttonExtend:hover {
+    box-shadow: 10px 10px;
+    background: #ffffff; }
+
+.buttonExtend {
+  background: rgba(128, 170, 177, 0.4); }
+
 .boxsize {
   padding: 2rem 4rem; }
 
@@ -128,3 +144,11 @@ body nav ul li {
 
 .colorW {
   color: white; }
+
+.opacityF {
+  opacity: 0.8;
+  border-radius: 30px; }
+
+.footer {
+  display: inline-block;
+  flex-direction: row; }

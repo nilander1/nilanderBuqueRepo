@@ -46,10 +46,10 @@ body nav ul li{
 
 //mixins
 
-@mixin texto($color,$font-size){
+@mixin texto($color,$font-size,$text-align){
 	color:$color;
 	font-size: $font-size;
-	text-align: center;
+	text-align: $text-align;
 
 }
 
@@ -77,11 +77,12 @@ $colorW:white;
 //maps
 
 $colors:(
-	'uno':blue,
-	'dos':mediumvioletred,
+	'uno':#f66c01,
+	'dos':blue,
 	'tres':rgba(128, 170, 177, 0.4),
-	'cuatro':red,
+	'cuatro':grey,
 	'cinco':#f7f8fa,
+	'seis':#ffffff,
 	);
 
 //variables globales
@@ -89,9 +90,10 @@ $colors:(
 	padding-left: 20rem;
 }
 
+
 .main{
 	background:map-get($map:$colors, $key:'cinco') ;	
- 	margin: 3rem 3rem;
+ 	margin: 2rem 2rem;
 	z-index: 1;
 	}
 .container-fluid {
@@ -104,30 +106,38 @@ $colors:(
 	display: inline-block;
 }
 
-.footer{
-	display: inline-block;
-	flex-direction: row;
+
+.opacity{
+	opacity: 0.8;
+	border-radius:150px;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem
 }
+
+
 	.keypad{
 		display: inline-flex;
 		flex-direction: row;
 		flex-wrap: nowrap
 	}
- .buttonNav{
-border-style: solid;
-border-width: 1px;
-&:hover{
-background: rgba(125, 213, 248, 0.8);}
+
+
+ .backgroundNav{
+ 	background-image:linear-gradient(to top,map-get($map:$colors, $key:'seis'),map-get($map:$colors, $key:'uno'));
  }
 
- .buttonExtend{
- 	@extend .buttonNav;
- 	background:map-get($map:$colors, $key:'tres') ;	
+ .backgroundFooter{
+ 	background-image:linear-gradient(to top,map-get($map:$colors, $key:'uno'),map-get($map:$colors, $key:'seis'));
  }
+ 
+ .e404{
+ 	text-align: center;
+ }
+
 /*media*/
 
- @media only screen and (max-width: 768px){
-.main{ margin: 1rem 
+ @media only screen and (min-width: 768px){
+.main{ margin: 4rem 
  }}
 
  @media only screen and (min-width: 768px) {
